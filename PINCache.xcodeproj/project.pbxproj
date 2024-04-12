@@ -121,6 +121,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0849C10F2BC9D1C7003D3BBC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		320117A124444DF7004FD783 /* PINCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A0FBFF1E4D3282000B552D /* PINCacheMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINCacheMacros.h; sourceTree = "<group>"; };
 		6928EED21E4160EE00B5D975 /* PINCaching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCaching.h; sourceTree = "<group>"; };
@@ -239,6 +240,7 @@
 		CC0105A71E271A1600890935 = {
 			isa = PBXGroup;
 			children = (
+				0849C10F2BC9D1C7003D3BBC /* PrivacyInfo.xcprivacy */,
 				CC0106031E271A9000890935 /* Source */,
 				CC01060C1E271A9000890935 /* Tests */,
 				CC0105B21E271A1600890935 /* Products */,
@@ -875,6 +877,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -898,6 +901,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1012,6 +1016,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCacheTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1022,6 +1027,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCacheTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

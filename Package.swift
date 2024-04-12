@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "PINCache",
     platforms: [
-        .macOS(.v10_10),
-        .iOS(.v9),
+        .iOS(.v14),
+        .macOS(.v10_15),
         .watchOS(.v2),
         .tvOS(.v9)
     ],
@@ -30,6 +30,9 @@ let package = Package(
             dependencies: ["PINOperation"],
             path: "Source",
             exclude: ["Info.plist"],
+            resources: [
+            	.copy("PrivacyInfo.xcprivacy")
+            ],
             publicHeadersPath: ".",
             cSettings: [
                 .define("NS_BLOCK_ASSERTIONS", to: "1", .when(configuration: .release)),
