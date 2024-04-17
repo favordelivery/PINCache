@@ -31,7 +31,7 @@ let package = Package(
             path: "Source",
             exclude: ["Info.plist"],
             resources: [
-            	.copy("PrivacyInfo.xcprivacy")
+            	.process("../PrivacyInfo.xcprivacy")
             ],
             publicHeadersPath: ".",
             cSettings: [
